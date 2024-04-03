@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt</title>
+</head>
+<body>
+<script>
+    class User {
+        constructor(name, age, email) {
+            this.name = name;
+            this.age = age;
+            this.email = email;
+        }
+
+        getAge() {
+            return this.age;
+        }
+
+        checkAge() {
+            let result ;
+            if (this.age < 18) {
+                result = "không đủ tuổi";
+            } else {
+                result = "bạn đã đủ tuổi trưởng thành";
+            }
+            return result;
+        }
+    }
+
+    let User1 = new User("cuong", 19, "cuongtran290605@gmail.com");
+    alert(User1.checkAge());
+</script>
+</body>
+</html>
